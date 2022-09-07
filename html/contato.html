@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cemidex">
+    <meta name="author" content="Renato Ribeiro Altoé">
+
+
+    <title>Contato - Sobre</title>
+
+    <script src="https://kit.fontawesome.com/4cff10fb00.js" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../Interfaces/estilo.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Sobre</h4>
+                        <p class="text-muted">
+                            O Cemidex é um sistema web para o gerenciamento de um cemitério.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <ul class="list-unstyled">
+                            <br>
+                            <form class="form-inline my-2 my-lg-0">
+                                <button class="btn btn-outline-warning my-2 my-sm-0" role="button"><a
+                                        href="../Interfaces/Login.html" class="text-white">Login</a></button>
+                            </form>
+                            <li><a href="contato.html" class="text-white">Contato</a></li>
+                            <li><a href="sobre.html" class="text-white">Saiba mais sobre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="index.html" class="navbar-brand d-flex align-items-center">
+                    <strong><span style="color: #9FBAEB">Cem</span><span style="color:rgb(129, 102, 70);"><i
+                                class="fa-solid fa-cross"></i></span><span style="color: #8CCFAF">dex</span></strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-8 offset-xl-2">
+
+                    <h1>
+                        Entre em contato conosco
+                    </h1>
+
+
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Primeiro Nome * </label>
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Insira seu nome" required="required"
+                                            data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Sobrenome * </label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control"
+                                            placeholder="Insira seu sobrenome" required="required"
+                                            data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="e-mail" class="form-control"
+                                            placeholder="Insira seu e-mail *" required="required"
+                                            data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Telefone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control"
+                                            placeholder="Insira seu telefone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form_message">Mensagem *</label>
+                                <textarea id="form_message" name="message" class="form-control"
+                                    placeholder="Insira sua mensagem" rows="4" required="required"
+                                    data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6LeVNMcUAAAAALAA7uBf4hqHolXao-OZRXlOLwHX"
+                                    data-callback="verifyRecaptchaCallback"
+                                    data-expired-callback="expiredRecaptchaCallback"></div>
+                                <input class="form-control d-none" data-recaptcha="true" required
+                                    data-error="Please complete the Captcha">
+                                <div class="help-block with-errors"></div>
+                            </div>
+
+
+                            <div class="form-group row">
+                                <div class="col-sm-10">
+                                    <button id="estadocivil" type="submit" class="btn btn-primary"><span
+                                            class="frase">Salvar</span></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <!-- /.8 -->
+
+            </div>
+            <!-- /.row-->
+
+        </div>
+    </main>
+
+
+
+    <footer class="text-light bg-dark pt-3 pb-1 mt-auto">
+        <div class="container">
+            <nav id="topo">
+
+
+                <p class="float-right">
+                    <a href="#">Voltar ao topo</a>
+                </p>
+            </nav>
+            <p>Cemidex&reg; 2022 : : Todos os direitos reservados&copy;</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

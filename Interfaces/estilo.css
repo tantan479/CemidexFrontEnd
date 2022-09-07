@@ -1,0 +1,250 @@
+#estadocivil{
+    background-color: white;
+}
+
+#estadocivil:hover{
+    background-color: #70C6FF;
+}
+
+#registros{
+    margin: none;
+}
+
+.frase{
+    color:#70C6FF;
+    
+}
+
+.frase:hover{
+    color:white;
+}
+
+h1{
+    color: #8CCFAF;
+}
+
+.argento{
+    font-family: "Prata", serif;
+}
+
+.espacamento{
+    margin-top: 80px;
+    margin-right: 0px;
+    margin-bottom: 80px;
+    margin-left: 0px;
+    font-size: 2.375rem;
+}
+
+.btn {
+    color: #70C6FF !important;
+    border-color: #70C6FF !important;
+}
+
+.btn-send{
+    color: #FFFFFF !important;
+    border-color: #70C6FF !important;
+}
+
+.btn-outline-warning:hover {
+    background-color: #70C6FF !important;
+    color: #212529 !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration-color: blue;
+}
+
+.cor{
+    color: white;
+}
+
+.btn-primary {
+    color: #FFFFFF !important;
+    border-color: #70C6FF !important;
+}
+
+#grad{
+    background: -webkit-linear-gradient(#9FBAEB, #A3CC95, #70C6FF, #8CCFAF, #E27974);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #9FBAEB;
+}
+
+tbody tr:nth-child(even){
+    background-color: #70C6FF;
+}
+
+h5 {
+    display: inline-block;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+  
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+ }
+
+.container-carrousel{
+    padding: 0 !important; 
+}
+
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.my-4{
+    border: 1px solid gray;
+}
+
+.footer{
+    padding: 20px 0;
+}
+
+.cabeca{
+    padding-right: 15px!important;
+    margin-right: 0%!important;
+}
+
+.navbar-brand-centered {
+    position: absolute;
+    left: 53%;
+    display: block;
+    width: 160px;
+    text-align: center;
+    background-color: transparent;
+}
+.navbar>.container .navbar-brand-centered, 
+.navbar>.container-fluid .navbar-brand-centered {
+    margin-left: -80px;
+}
+
+.plus{
+    background-color: #A3CC95;
+}
+
+.cardtexto{
+    background-color: white;
+}
+
+.nprecos{
+    padding-bottom: 40px;
+}
+
+.memorial{
+    letter-spacing: 0.03em!important;
+}
+
+.rmemorial{
+    display: flex!important;
+    flex-wrap: wrap!important;
+}
+
+.h2memorial{
+    text-align: center!important;
+    padding-bottom: 80px!important;
+    color: white;
+}
+
+.amemorial{
+    color: white;
+    text-decoration: #212529!important;
+    text-decoration-color: #212529!important;
+    position: relative;
+    display: block;
+    max-width: 370px;
+    min-height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px rgb(37 42 45 / 15%);
+    will-change: transform;
+}
+
+.amemorial:hover{
+    color: black!important;
+    text-decoration: #212529!important;
+    text-decoration-color: #212529!important;
+}
+
+.person-poster .person-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.memorial{
+    background-color: #343a40;
+    padding-right: 0%!important;
+    padding-left: 0%!important;
+    padding-top: 80px!important;
+    padding-bottom: 120px!important;
+}
+
+.sombra{
+    box-shadow: 0 0 2em lightslategray;
+}
+
+.list-unstyled{
+    text-align: right;
+}
+
+.botaoDireita{
+    justify-content: right;
+}
+
+.form-inline{
+    float: right!important;
+    display: grid!important;
+}
+
+.morto{
+    background-color: #322A26!important;
+    color: white;
+}
+
+.cartao{
+    border: 0px!important;
+}
+
+.contato{
+    padding-top: 30px!important;
+}
+
+.h2contato{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.form-group>.frase>button:hover{
+    color:white!important;
+    background-color: #212529!important;
+}
+
+.nomemorto{
+    color: white;
+    text-decoration: none;
+}
+
+.nomemorto:hover{
+    color: white;
+}

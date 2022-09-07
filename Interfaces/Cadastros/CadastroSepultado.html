@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cemidex">
+    <meta name="author" content="Raphael Secchin">
+
+
+    <title>Cemidex - Cadastro Sepul.</title>
+
+    <script src="https://kit.fontawesome.com/4cff10fb00.js" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../estilo.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Sobre</h4>
+                        <p class="text-muted">
+                            O Cemidex é um sistema web para o gerenciamento de um cemitério.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <ul class="list-unstyled">
+                            <br>
+                            <form class="form-inline my-2 my-lg-0">
+                                <button class="btn btn-outline-warning my-2 my-sm-0">Perfil</button>
+                            </form>
+                            <li><a href="../../html/contato.html" class="text-white">Contato</a></li>
+                            <li><a href="../../html/sobre.html" class="text-white">Saiba mais sobre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="../../html/index.html" class="navbar-brand d-flex align-items-center">
+                    <strong><span style="color: #9FBAEB">Cem</span><span style="color:rgb(129, 102, 70);"><i
+                                class="fa-solid fa-cross"></i></span><span style="color: #8CCFAF">dex</span></strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <!-- Desensolva aqui -->
+        <div class="container">
+            <center>
+                <h1>Cadastro de Falecido Sepultado</h1>
+                <div>
+                    <form>
+                        <!--Nomes-->
+                        <div class="form-group row">
+                            <label for="inputNome" class="col-sm-2 col-form-label">Nome do Falecido:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNome" placeholder="Nome">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputNomeMae" class="col-sm-2 col-form-label">Nome da Mãe:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNomeMae" placeholder="Nome da Mãe">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputNomePai" class="col-sm-2 col-form-label">Nome do Pai:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputNome" placeholder="Nome do Pai">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="inputIdade" class="col-sm-2 col-form-label">Idade:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="inputIdade" placeholder="Idade">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputEnterro" class="col-sm-2 col-form-label">Data do enterro:</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputEnterro" placeholder="Data do Enterro">
+                            </div>
+                        </div>
+
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-auto">
+                                    <label for="inputSexo" class="col-sm-2 col-form-lable">Sexo:</label>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" checked>
+                                        <label class="form-check-label" for="exampleRadios1">Masculino</label>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">Feminino</label>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios3" value="option3">
+                                        <label class="form-check-label" for="exampleRadios3">Outro</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="dropdown">
+                            <button id="estadocivil" class="btn btn-secondary dropdown-toggle" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <spanEstado class="frase">Estado Civil</span>
+                            </button>
+                            <br>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Solteiro(a)</a>
+                                <a class="dropdown-item" href="#">Viúvo(a)</a>
+                                <a class="dropdown-item" href="#">Casado(a)</a>
+                                <a class="dropdown-item" href="#">Divorciado(a)</a>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputCertidao" class="col-sm-2 col-form-label">Certidão de óbito:</label>
+                            <div class="col-sm-10">
+                                <input type="file" class="form-control" id="inputCertidao"
+                                    placeholder="Selecione o arquivo">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputObito" class="col-sm-2 col-form-label">Data de óbito:</label>
+                            <div class="col-sm-10">
+                                <input type="date" class="form-control" id="inputObito" placeholder="Data de óbito">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="inputJazigo" class="col-sm-2 col-form-label">Número do Jazigo:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="inputJazigo" placeholder="Número do Jazigo">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button id="estadocivil" type="submit" class="btn btn-primary"><span
+                                        class="frase">Salvar</span></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </center>
+        </div>
+    </main>
+
+    <footer class="text-light bg-dark pt-3 pb-1 mt-auto">
+        <div class="container">
+            <nav id="bottom">
+                <p class="float-right">
+                    <a href="#">Voltar ao topo</a>
+                </p>
+            </nav>
+            <p>Cemidex&reg; 2022 : : Todos os direitos reservados&copy;</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
