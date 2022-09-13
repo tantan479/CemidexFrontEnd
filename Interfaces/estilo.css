@@ -262,17 +262,17 @@ h5 {
 }
 
 .sobre{
-    border: 1px solid rgba(0,0,0,.2)!important;
-    border-radius: 25px !important;
-    box-shadow: 0 0px 20px rgba(0,0,0,.2);
-    width: 90%!important;
-    display: block!important;
-    text-align: center!important;
-    justify-content: center!important;
-    background-color: white !important;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
     height: 90vh;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 5vw;
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    border-radius: 25px !important;
+    width: 90% !important;
+    display: inline-table !important;
+    text-align: center !important;
+    justify-content: center !important;
+    background-color: white !important;
+    max-width: fit-content;
 }
 
 .correto{
@@ -301,6 +301,9 @@ h5 {
 .objetivos{
     font-size: large;
     width: 50%;
+    text-align: center!important;
+    justify-content: center!important;
+    display: flex!important;
 }
 
 .conteudo{
