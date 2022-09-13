@@ -6,6 +6,14 @@
     background-color: #70C6FF;
 }
 
+#adquirir{
+    background-color: white;
+}
+
+#adquirir:hover{
+    background-color: #70C6FF;
+}
+
 #registros{
     margin: none;
 }
@@ -110,10 +118,6 @@ h5 {
 
 .my-4{
     border: 1px solid gray;
-}
-
-.footer{
-    padding: 20px 0;
 }
 
 .cabeca{
@@ -242,9 +246,81 @@ h5 {
 
 .nomemorto{
     color: white;
-    text-decoration: none;
 }
 
 .nomemorto:hover{
     color: white;
+    text-decoration: underline!important;
+}
+
+.homepage{
+    text-decoration: none;
+}
+
+.homepage:hover{
+    text-decoration: none;
+}
+
+.sobre{
+    border: 1px solid rgba(0,0,0,.2)!important;
+    border-radius: 25px !important;
+    box-shadow: 0 0px 20px rgba(0,0,0,.2);
+    width: 90%!important;
+    display: block!important;
+    text-align: center!important;
+    justify-content: center!important;
+    background-color: white !important;
+    height: 90vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.correto{
+    color: #70db70;
+}
+
+.negado{
+    color: #343a40;    
+}
+
+.listapreco{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.footer{
+    margin-top: auto!important;
+    padding-top: 10px!important;
+    padding-left: 15px!important;
+}
+
+.objetivos{
+    font-size: large;
+    width: 50%;
+}
+
+.conteudo{
+    justify-content: center!important;
+    font-size: 20px;
+    text-align: center!important;
+}
+
+.icone{
+    padding-left: 30%!important;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#Adquirir{
+    background-color: white;
 }
