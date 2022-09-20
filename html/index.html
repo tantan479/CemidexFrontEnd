@@ -20,6 +20,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="../Interfaces/estilo.css" rel="stylesheet">
     <link href="../Interfaces/card.css" rel="stylesheet">
+    <link href="estilosHTML.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,9 +39,8 @@
                         <ul class="list-unstyled">
                             <br>
                             <form class="form-inline my-2 my-lg-0">
-                                <li> <button class="btn btn-outline-warning my-2 my-sm-0 botaoDireita" role="button"><a
-                                            href="../Interfaces/Login.html"
-                                            class="text-white botaoDireita">Login</a></button></li>
+                                <li> <a href="../Interfaces/Login.html" class="btn text-white botaoDireita botoes"
+                                        role="button">Login</a></li>
                                 <li><a href="contato.html" class="text-white nomemorto">Contato</li>
                                 <li><a href="../Interfaces/Memorial.html" class="text-white nomemorto">Memorial</a></li>
                                 <li><a href="sobre.html" class="text-white nomemorto">Saiba mais sobre</li>
@@ -141,14 +141,17 @@
                         <div>
                             <div class="card-body conteudo">
                                 <ul class="fa-ul listapreco">
-                                    <li><span class="fa-li correto icone"><i class="fa-solid fa-check"></i></span>tem isso</li>
-                                    <li><span class="fa-li correto icone"><i class="fa-solid fa-check"></i></span>tem isso</li>
-                                    <li><span class="fa-li negado icone"><i class="fa-solid fa-close"></i></span>não tem isso</li>
-                                    <li><span class="fa-li negado icone"><i class="fa-solid fa-close"></i></span>não tem isso</li>
+                                    <li><span class="fa-li correto icone"><i class="fa-solid fa-check"></i></span>tem
+                                        isso</li>
+                                    <li><span class="fa-li correto icone"><i class="fa-solid fa-check"></i></span>tem
+                                        isso</li>
+                                    <li><span class="fa-li negado icone"><i class="fa-solid fa-close"></i></span>não tem
+                                        isso</li>
+                                    <li><span class="fa-li negado icone"><i class="fa-solid fa-close"></i></span>não tem
+                                        isso</li>
                                 </ul>
                                 <br>
-                                <button id="adquirir" type="submit" class="btn btn-primary"><span
-                                    class="frase">Adquirir</span></button>
+                                <a id="adquirir" href="#" role="button" class="btn btn-primary">Adquirir</a>
                             </div><br>
                         </div>
                     </div>
@@ -176,14 +179,17 @@
                         <div>
                             <div class="card-body conteudo">
                                 <ul class="fa-ul listapreco">
-                                    <li><span class="fa-li correto icone"><i class="fa-solid fa-check"></i></span>tem isso</li>
-                                    <li><span class="fa-li correto icone"><i class="fa-solid fa-check"></i></span>tem isso</li>
-                                    <li><span class="fa-li negado icone"><i class="fa-solid fa-close"></i></span>não tem isso</li>
-                                    <li><span class="fa-li negado icone"><i class="fa-solid fa-close"></i></span>não tem isso</li>
+                                    <li><span class="fa-li correto icone"><i class="fa-solid fa-check"></i></span>tem
+                                        isso</li>
+                                    <li><span class="fa-li correto icone"><i class="fa-solid fa-check"></i></span>tem
+                                        isso</li>
+                                    <li><span class="fa-li negado icone"><i class="fa-solid fa-close"></i></span>não tem
+                                        isso</li>
+                                    <li><span class="fa-li negado icone"><i class="fa-solid fa-close"></i></span>não tem
+                                        isso</li>
                                 </ul>
                                 <br>
-                                <button id="adquirir" type="submit" class="btn btn-primary"><span
-                                    class="frase">Adquirir</span></button>
+                                <a id="adquirir" href="#" role="button" class="btn btn-primary">Adquirir</a>
                             </div><br>
                         </div>
                     </div>
@@ -195,19 +201,15 @@
             <div class="container">
                 <div class="card-deck">
                     <div class="card cartao">
-                        <img class="card-img-top"
-                            src="../Interfaces/img/Sophia.jpg"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="../Interfaces/img/Sophia.jpg" alt="Card image cap">
                         <div class="card-body morto">
                             <center>
-                                <h2 class="card-title"><a href="#" class="nomemorto">Sophia Esther Daniela</a></h2>
+                                <h2 class="card-title"><a href="../Interfaces/MemorialSophia.html" class="nomemorto">Sophia Esther Daniela</a></h2>
                             </center>
                         </div>
                     </div>
                     <div class="card cartao">
-                        <img class="card-img-top"
-                            src="../Interfaces/img/Davi.jpg"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="../Interfaces/img/Davi.jpg" alt="Card image cap">
                         <div class="card-body morto">
                             <center>
                                 <h2 class="card-title"><a href="#" class="nomemorto">Davi Guilherme Teixeira</a></h2>
@@ -215,9 +217,7 @@
                         </div>
                     </div>
                     <div class="card cartao">
-                        <img class="card-img-top"
-                            src="../Interfaces/img/Silvana.jpg"
-                            alt="Card image cap">
+                        <img class="card-img-top" src="../Interfaces/img/Silvana.jpg" alt="Card image cap">
                         <div class="card-body morto">
                             <center>
                                 <h2 class="card-title"><a href="#" class="nomemorto">Silvana Josefa</a></h2>
@@ -284,8 +284,7 @@
 
                     <div class="form-group row">
                         <div class="col-sm-10">
-                            <button id="estadocivil" type="submit" class="btn btn-primary"><span
-                                    class="frase">Enviar</span></button>
+                            <a id="adquirir" href="#" class="btn text-white" role="button" > Enviar </a>
                         </div>
                     </div>
 
