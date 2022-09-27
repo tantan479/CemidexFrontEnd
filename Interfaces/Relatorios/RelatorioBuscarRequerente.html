@@ -14,6 +14,7 @@
     <script src="https://kit.fontawesome.com/4cff10fb00.js" crossorigin="anonymous"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+    <link href="../estilo.css" rel="stylesheet">
 
 
     <!-- Bootstrap CSS -->
@@ -22,13 +23,13 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="../estilo.css" rel="stylesheet">
     <style>
-        td{
-            background-color:white;
+        td {
+            background-color: white;
         }
     </style>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../../html/img/index/fundo.jpg");'>
 
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
@@ -69,52 +70,209 @@
     </header>
 
     <main role="main">
-        <div class="container controls">
-            <div class="row">
-                <h1>Buscar Requerente</h1>
-                <div class="input-group rounded">
-                    <input id="pesquisa" type="search" class="form-control rounded" placeholder="Digite um nome"
-                        aria-label="Search" aria-describedby="search-addon" />
-                    <span class="input-group-text border-0" id="search-addon">
-                        <i class="fas fa-search"></i>
-                    </span>
-                </div>
-            </div>
-            <br>
-            <table>
-                <tr>
-                    <td>
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Fulano da Silva</h5>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse"
-                                    data-target="#collapseExample" aria-expanded="false"
-                                    aria-controls="collapseExample">
-                                    Detalhar
+        <div class="container ctcontainer">
+            <center>
+                <div class="row">
+
+                    <div class="col-xl-8 offset-xl-2">
+
+                        <br>
+                        <h1 class="meiuca">
+                            Relatório do Requerente
+                        </h1>
+
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+                            <div class="controls">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter" style="margin-right: 50%; display: inline-block;">
+                                    Cadastrar Requerente
                                 </button>
+                                <div class="form-group">
+                                    <div class="col-lg-6">
+
+                                        <div class="modal fade bd-example-modal-lg" id="exampleModalCenter"
+                                            tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                            aria-hidden="true" style="border-radius: 10px;">
+                                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document"
+                                                style="border-radius: 10px;">
+                                                <div class="modal-content" style="border-radius: 10px;">
+                                                    <div class="modal-body">
+
+                                                        <main role="main">
+                                                            <div>
+                                                                <center>
+                                                                    <div class="row">
+
+                                                                        <div class="col-xl-8 offset-xl-2">
+
+                                                                            <h1 style="display: inline-block;">
+                                                                                Cadastro de Requerente
+                                                                            </h1>
+
+                                                                            <form id="contact-form" method="post"
+                                                                                action="contact.php" role="form">
+
+                                                                                <div class="messages"></div>
+
+                                                                                <div class="controls">
+
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="form-group">
+                                                                                            <label for="form_name">Nome
+                                                                                                Completo * </label>
+                                                                                            <input id="form_name"
+                                                                                                type="text" name="name"
+                                                                                                class="form-control"
+                                                                                                placeholder="Insira seu nome completo"
+                                                                                                required="required"
+                                                                                                data-error="Firstname is required.">
+                                                                                            <div
+                                                                                                class="help-block with-errors">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-6">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="form_email">Email
+                                                                                                    *</label>
+                                                                                                <input id="form_email"
+                                                                                                    type="email"
+                                                                                                    name="e-mail"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Insira seu e-mail *"
+                                                                                                    required="required"
+                                                                                                    data-error="Valid email is required.">
+                                                                                                <div
+                                                                                                    class="help-block with-errors">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="form_cpf">CPF
+                                                                                                    *</label>
+                                                                                                <input id="form_cpf"
+                                                                                                    type="tel"
+                                                                                                    name="phone"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Insira seu CPF">
+                                                                                                <div
+                                                                                                    class="help-block with-errors">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <label
+                                                                                            for="form_endereco">Endereço
+                                                                                            *</label>
+                                                                                        <textarea id="form_endereco"
+                                                                                            name="endereco"
+                                                                                            class="form-control"
+                                                                                            placeholder="Insira o endereco"
+                                                                                            rows="4" required="required"
+                                                                                            data-error="Please, leave us a message."></textarea>
+                                                                                        <div
+                                                                                            class="help-block with-errors">
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <div class="form-group">
+                                                                                        <div class="g-recaptcha"
+                                                                                            data-sitekey="6LeVNMcUAAAAALAA7uBf4hqHolXao-OZRXlOLwHX"
+                                                                                            data-callback="verifyRecaptchaCallback"
+                                                                                            data-expired-callback="expiredRecaptchaCallback">
+                                                                                        </div>
+                                                                                        <input
+                                                                                            class="form-control d-none"
+                                                                                            data-recaptcha="true"
+                                                                                            required
+                                                                                            data-error="Please complete the Captcha">
+                                                                                        <div
+                                                                                            class="help-block with-errors">
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <a id="adquirir" href="#"
+                                                                                        role="button"
+                                                                                        class="btn btn-primary frase">Salvar</a>
+                                                                                    <br><br>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </center>
+                                                            </div>
+                                                        </main>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="inputNome">Nome do Requerente:</label>
+                                            <input type="text" class="form-control" id="inputNome"
+                                                placeholder="Buscar pelo Requerente">
+                                        </div>
+                                    </div>
                                 </div>
+
+
+                                <div class="card-deck memorias">
+
+                                    <div class="card">
+                                        <div class="card-body morto">
+                                            <h2 class="card-title">Maria Alice</h2><br>
+                                            <button class="btn btn-primary pemorto" type="button" data-toggle="collapse"
+                                                data-target="#collapseMaria" aria-expanded="false"
+                                                aria-controls="collapseExample">
+                                                Registros
+                                            </button><br>
+                                            <div class="collapse" id="collapseMaria">
+                                                <div class="card card-body" style="color: black;">
+                                                    <p>Nome: Maria Alice</p>
+                                                    <p>CPF: 123.456.789-10</p>
+                                                    <p>Telefone: (28) 99923-4857</p>
+                                                    <p>Id do Requerente: 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body morto">
+                                            <h2 class="card-title">Marcos André</h2><br>
+                                            <button class="btn btn-primary pemorto" type="button" data-toggle="collapse"
+                                                data-target="#collapseMarcos" aria-expanded="false"
+                                                aria-controls="collapseExample">
+                                                Registros
+                                            </button><br>
+                                            <div class="collapse" id="collapseMarcos">
+                                                <div class="card card-body" style="color: black;">
+                                                    <p>Nome: Marcos André</p>
+                                                    <p>CPF: 123.456.789-10</p>
+                                                    <p>Telefone: (28) 99923-4857</p>
+                                                    <p>Id do Requerente: 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div><br>
                             </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Fulano da Silva</h5>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse"
-                                    data-target="#collapseExample1" aria-expanded="false"
-                                    aria-controls="collapseExample1">
-                                    Detalhar
-                                </button>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-            <br><br>
+                        </form>
+                    </div>
+                </div>
+            </center>
         </div>
     </main>
-
-
 
     <footer class="text-light bg-dark pt-3 pb-1 mt-auto">
         <div class="container">

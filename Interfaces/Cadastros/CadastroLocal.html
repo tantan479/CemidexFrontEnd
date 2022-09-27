@@ -24,7 +24,7 @@
     <link href="../estilo.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../../html/img/index/floresct.png");'>
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
@@ -65,12 +65,56 @@
 
     <main role="main">
         <!-- Desensolva aqui -->
-        <div class="container">
+        <div class="container ctcontainer">
             <center>
-                <h1>Cadastro de Localização do Jazigo</h1>
+                
+                <div class="row">
+
+                    <div class="col-xl-8 offset-xl-2">
+
+                        <h1>Cadastro de Localização de Jazigo</h1>
+
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+
+                            <div class="controls">
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="inputNome">Nome do Setor:</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputNome" placeholder="Nome do Setor">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="inputDESCRICAO">Descrição do Local:</label>
+                                            <div class="col-sm-10">
+                                                <input type="text" class="form-control" id="inputDESCRICAO" placeholder="Descrição do local">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a id="adquirir" href="#" role="button" class="btn btn-primary frase">Salvar</a>
+                                <br><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                <!-- <h1>Cadastro de Localização do Jazigo</h1>
                 <div>
                     <form>
-                        <!--Nomes-->
+                        
                         <div class="form-group row">
                             <label for="inputNome" class="col-sm-2 col-form-label">Nome do Setor:</label>
                             <div class="col-sm-10">
@@ -91,7 +135,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
             </center>
         </div>
     </main>

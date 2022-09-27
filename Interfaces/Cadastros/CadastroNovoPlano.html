@@ -24,7 +24,7 @@
 <link href="../estilo.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../../html/img/index/floresct.png");'>
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
             <div class="container">
@@ -65,37 +65,40 @@
 
     <main role="main">
         <!-- Desensolva aqui -->
-        <div class="container">
+        <div class="container ctcontainer">
             <center>
                 <h1>Cadastro de um Novo Plano</h1>
                 <div>
                     <form>
-                        <!--Nomes-->
-                        <div class="form-group row">
-                            <label for="inputNome" class="col-sm-2 col-form-label">Nome do Plano:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputNome" placeholder="Nome do plano">
+                        <div class="controls">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_name">Nome do plano: </label>
+                                    <input id="form_name" type="text" name="name" class="form-control"
+                                        placeholder="Insira o nome do plano" required="required"
+                                        data-error="Insira um nome do plano válido.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="inputDescricao" class="col-sm-2 col-form-label">Descrição:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="inputDescricao" placeholder="Descrição">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_decricao">Descrição:</label>
+                                    <input id="form_descricao" type="text" name="descricao" class="form-control"
+                                        placeholder="Descrição" required="required"
+                                        data-error="Insira a descrição do plano.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="inputMensal" class="col-sm-2 col-form-label">Mensalidade do Plano:</label>
-                            <div class="col-sm-10">
-                                <input type="number" class="form-control" id="inputMensal" placeholder="Mensalidade">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_mensalidade">Mensalidade:</label>
+                                    <input id="form_mensalidade" type="text" name="mensalidade" class="form-control"
+                                        placeholder="Insira a Mensalidade do plano">
+                                    <div class="help-block with-errors"></div>
+                                </div>
                             </div>
-                        </div>
-
-
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <button id="estadocivil" type="submit" class="btn btn-primary"><span
-                                        class="frase">Salvar</span></button>
-                            </div>
+                            <a id="adquirir" href="#" role="button" class="btn btn-primary frase">Salvar</a>
+                            <br><br>
                         </div>
                     </form>
                 </div>

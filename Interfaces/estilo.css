@@ -1,5 +1,11 @@
+@font-face {
+    font-family: AppleGaramond;
+    src: url("../AppleGaramond.ttf");
+}
+
 #estadocivil{
     background-color: white;
+    transition: 0.5s;
 }
 
 #estadocivil:hover{
@@ -9,6 +15,7 @@
 #adquirir{
     background-color: white;
     color: #70C6FF!important;
+    transition: 0.5s;
 }
 
 #adquirir:hover{
@@ -41,6 +48,8 @@
 
 h1{
     color: #8CCFAF;
+    font-family: AppleGaramond;
+    font-size: 60px;
 }
 
 .argento{

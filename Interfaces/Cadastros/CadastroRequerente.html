@@ -23,7 +23,7 @@
     <link href="../estilo.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../../html/img/index/floresct.png");'>
 
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
@@ -64,23 +64,23 @@
     </header>
 
     <main role="main">
-        <div class="container">
+        <div class="container ctcontainer">
+            <center>
+                <div class="row">
 
-            <div class="row">
+                    <div class="col-xl-8 offset-xl-2">
 
-                <div class="col-xl-8 offset-xl-2">
+                        <h1>Cadastro de Requerente
 
-                    <h1>Cadastro de Requerente
-
-                    </h1>
+                        </h1>
 
 
-                    <form id="contact-form" method="post" action="contact.php" role="form">
+                        <form id="contact-form" method="post" action="contact.php" role="form">
 
-                        <div class="messages"></div>
+                            <div class="messages"></div>
 
-                        <div class="controls">
-                            <div class="row">
+                            <div class="controls">
+
                                 <div class="col-lg-6">
                                     <div class="form-group">
                                         <label for="form_name">Nome Completo * </label>
@@ -90,63 +90,54 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="e-mail" class="form-control"
-                                            placeholder="Insira seu e-mail *" required="required"
-                                            data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="form_email">Email *</label>
+                                            <input id="form_email" type="email" name="e-mail" class="form-control"
+                                                placeholder="Insira seu e-mail *" required="required"
+                                                data-error="Valid email is required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <label for="form_cpf">CPF *</label>
+                                            <input id="form_cpf" type="tel" name="phone" class="form-control"
+                                                placeholder="Insira seu CPF">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <label for="form_cpf">CPF *</label>
-                                        <input id="form_cpf" type="tel" name="phone" class="form-control"
-                                            placeholder="Insira seu CPF">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
+                                <div class="form-group">
+                                    <label for="form_endereco">Endereço *</label>
+                                    <textarea id="form_endereco" name="endereco" class="form-control"
+                                        placeholder="Insira o endereco" rows="4" required="required"
+                                        data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
                                 </div>
+
+
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6LeVNMcUAAAAALAA7uBf4hqHolXao-OZRXlOLwHX"
+                                        data-callback="verifyRecaptchaCallback"
+                                        data-expired-callback="expiredRecaptchaCallback"></div>
+                                    <input class="form-control d-none" data-recaptcha="true" required
+                                        data-error="Please complete the Captcha">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+
+
+                                <a id="adquirir" href="#" role="button" class="btn btn-primary frase">Salvar</a>
+                                <br><br>
                             </div>
-                            <div class="form-group">
-                                <label for="form_endereco">Endereço *</label>
-                                <textarea id="form_endereco" name="endereco" class="form-control"
-                                    placeholder="Insira o endereco" rows="4" required="required"
-                                    data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-
-                            <div class="form-group">
-                                <div class="g-recaptcha" data-sitekey="6LeVNMcUAAAAALAA7uBf4hqHolXao-OZRXlOLwHX"
-                                    data-callback="verifyRecaptchaCallback"
-                                    data-expired-callback="expiredRecaptchaCallback"></div>
-                                <input class="form-control d-none" data-recaptcha="true" required
-                                    data-error="Please complete the Captcha">
-                                <div class="help-block with-errors"></div>
-                            </div>
-
-
-                            <button id="estadocivil" type="submit" class="btn btn-primary"><span
-                                class="frase">Salvar</span></button>
-
-
-                        </div>
-
-                    </form>
-
+                        </form>
+                    </div>
                 </div>
-                <!-- /.8 -->
-
-            </div>
-            <!-- /.row-->
-
+            </center>
         </div>
     </main>
-
-
 
     <footer class="text-light bg-dark pt-3 pb-1 footer">
         <div class="container">

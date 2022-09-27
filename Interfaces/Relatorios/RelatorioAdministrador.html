@@ -20,9 +20,10 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../estilo.css" rel="stylesheet">
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../../html/img/index/fundo.jpg");'>
 
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
@@ -38,8 +39,8 @@
                         <ul class="list-unstyled">
                             <br>
                             <form class="form-inline my-2 my-lg-0">
-                                <li> <button class="btn btn-outline-warning my-2 my-sm-0 botaoDireita" role="button"><a
-                                            class="text-white botaoDireita">Perfil</a></button></li>
+                                <li><a href="#" class="btn text-white botaoDireita botoes" role="button">Perfil</a>
+                                </li>
                                 <li><a href="../../html/contato.html" class="text-white">Contato</li>
                                 <li><a href="../../html/sobre.html" class="text-white">Saiba mais sobre</li>
                             </form>
@@ -63,40 +64,167 @@
     </header>
 
     <main role="main">
-        <div class="container controls">
-            <div class="row">
-                <h1>Buscar Administrador</h1>
-                <div class="input-group rounded">
-                    <input id="pesquisa" type="search" class="form-control rounded" placeholder="Buscar"
-                        aria-label="Search" aria-describedby="search-addon" />
-                    <span class="input-group-text border-0" id="search-addon">
-                        <i class="fas fa-search"></i>
-                    </span>
-                </div>
-            </div>
-            <br>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                    <h5 class="card-title">[Nome]</h5>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse"
-                        data-target="#collapseExample" aria-expanded="false"
-                        aria-controls="collapseExample">
-                        Registros
-                    </button>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            <p>Nome: [Nome]</p>
-                            <p>CPF: 123.456.789-10</p>
-                            <p>Telefone: (28) 99923-4857</p>
-                            <p>Id do Administrador: 1</p>
-                        </div>
+        <div class="container ctcontainer">
+            <center>
+                <div class="row">
+
+                    <div class="col-xl-8 offset-xl-2">
+
+                        <br>
+                        <h1 class="meiuca">
+                            Relatório do Administrador<br>
+                        </h1>
+
+
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+
+                            <div class="controls">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter" style="margin-right: 50%; display: inline-block;">
+                                    Cadastrar novo Administrador
+                                </button>
+                                <div class="form-group">
+                                    <div class="col-lg-6">
+
+                                        <!-- Modal -->
+                                        <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="border-radius: 10px;">
+                                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document" style="border-radius: 10px;">
+                                                <div class="modal-content" style="border-radius: 10px;">
+                                                    <div class="modal-body">
+                                                        <main role="main">
+                                                            <!-- Desensolva aqui -->
+                                                            <div>
+                                                                <center>
+                                                                    <div class="row">
+                                                    
+                                                                        <div class="col-xl-8 offset-xl-2">
+                                                    
+                                                                            <h1 class="meiuca">
+                                                                                Cadastro de Administrador
+                                                                            </h1>
+                                                    
+                                                                            <form id="contact-form" method="post" action="contact.php" role="form">
+                                                                                <div class="controls">
+                                                    
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-6">
+                                                                                            <div class="form-group">
+                                                                                                <label for="inputId">ID do Funcionário:</label>
+                                                                                                <input type="number" class="form-control" id="inputID" placeholder="Id">
+                                                                                            </div>
+                                                                                        </div>
+                                                    
+                                                                                        <div class="col-lg-6">
+                                                                                            <div class="form-group">
+                                                                                                <label for="inputNome">Nome do
+                                                                                                    Funcionário:</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                    <input type="text" class="form-control" id="inputNome"
+                                                                                                        placeholder="Nome">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                    
+                                                                                    </div>
+                                                    
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-6">
+                                                                                            <div class="form-group">
+                                                                                                <label for="inputCPF">CPF do
+                                                                                                    Funcionário:</label>
+                                                                                                <div class="col-sm-10">
+                                                                                                    <input type="text" class="form-control" id="inputCPF" placeholder="CPF">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                    
+                                                                                        <div class="col-lg-6">
+                                                                                            <div class="form-group">
+                                                                                                <form>
+                                                                                                    <div class="form-group">
+                                                                                                        <div class="col-auto">
+                                                                                                            <label for="inputSexo">Administrador: </label>
+                                                                                                        </div>
+                                                                                                        <div>
+                                                                                                            <div class="form-check">
+                                                                                                                <input class="form-check-input" type="radio"
+                                                                                                                    name="exampleRadios" id="exampleRadios1" value="option1"
+                                                                                                                    checked>
+                                                                                                                <label class="form-check-label"
+                                                                                                                    for="exampleRadios1">Sim</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div>
+                                                                                                            <div class="form-check">
+                                                                                                                <input class="form-check-input" type="radio"
+                                                                                                                    name="exampleRadios" id="exampleRadios2"
+                                                                                                                    value="option2">
+                                                                                                                <label class="form-check-label"
+                                                                                                                    for="exampleRadios2">Não</label>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </form>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="form-group">
+                                                                                    <div class="col-sm-10">
+                                                                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Salvar</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div> 
+                                                                </center>
+                                                            </div>
+                                                        </main>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group">
+                                            <label for="inputNome">Nome do Administrador:</label>
+
+                                            <input type="text" class="form-control" id="inputNome"
+                                                placeholder="Buscar pelo Administrador">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h5 class="card-title">[Nome]</h5>
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                            data-target="#collapseExample" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                            Registros
+                                        </button><br>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body">
+                                                <p>Nome: [Nome]</p>
+                                                <p>CPF: 123.456.789-10</p>
+                                                <p>Telefone: (28) 99923-4857</p>
+                                                <p>Id do Administrador: 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><br>
+
+                            </div>
+                        </form>
+
                     </div>
+
                 </div>
-            </div>
+            </center>
         </div>
     </main>
-
-
 
     <footer class="text-light bg-dark pt-3 pb-1 mt-auto">
         <div class="container">
