@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cemidex">
+    <meta name="author" content="Raphael Secchin">
+
+
+    <title>Cemidex - Rel. Pla.</title>
+
+    <script src="https://kit.fontawesome.com/4cff10fb00.js" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../estilo.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../../html/img/index/fundo.jpg");'>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Sobre</h4>
+                        <p class="text-muted">
+                            O Cemidex é um sistema web para o gerenciamento de um cemitério.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <ul class="list-unstyled">
+                            <br>
+                            <form class="form-inline my-2 my-lg-0">
+                                <li> <button class="btn btn-outline-warning my-2 my-sm-0 botaoDireita" role="button"><a
+                                            class="text-white botaoDireita">Perfil</a></button></li>
+                                <li><a href="../../html/contato.html" class="text-white">Contato</li>
+                                <li><a href="../../html/sobre.html" class="text-white">Saiba mais sobre</li>
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="../../html/index.html" class="navbar-brand-centered d-flex align-items-center homepage">
+                    <strong><span style="color: #9FBAEB">Cem</span><span style="color:rgb(256, 256, 256);"><i
+                                class="fa-solid fa-dove"></i></span><span style="color: #8CCFAF">dex</span></strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <center>
+            <div class="container controls min-vh ctcontainer">
+                <h1> Relatório de Planos</h1>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"
+                    style="margin-right: 50%; display: inline-block;">
+                    Cadastrar Plano
+                </button>
+                <br>
+                <br>
+
+                <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="border-radius: 10px;">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document"
+                        style="border-radius: 10px;">
+                        <div class="modal-content" style="border-radius: 10px;">
+                            <div class="modal-body">
+
+                                <main role="main">
+                                    <div>
+                                        <center>
+                                            <h1>Cadastro de um Novo Plano</h1>
+                                            <div>
+                                                <form>
+                                                    <div class="controls">
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="form_name">Nome do plano: </label>
+                                                                <input id="form_name" type="text" name="name"
+                                                                    class="form-control"
+                                                                    placeholder="Insira o nome do plano"
+                                                                    required="required"
+                                                                    data-error="Insira um nome do plano válido.">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="form_decricao">Descrição:</label>
+                                                                <input id="form_descricao" type="text" name="descricao"
+                                                                    class="form-control" placeholder="Descrição"
+                                                                    required="required"
+                                                                    data-error="Insira a descrição do plano.">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="form-group">
+                                                                <label for="form_mensalidade">Mensalidade:</label>
+                                                                <input id="form_mensalidade" type="text"
+                                                                    name="mensalidade" class="form-control"
+                                                                    placeholder="Insira a Mensalidade do plano">
+                                                                <div class="help-block with-errors"></div>
+                                                            </div>
+                                                        </div>
+                                                        <a id="adquirir" href="#" role="button"
+                                                            class="btn btn-primary frase">Salvar</a>
+                                                        <br><br>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </center>
+                                    </div>
+                                </main>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome do Plano</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Mensalidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Cemidex Plus</td>
+                            <td>Lorem ipsum</td>
+                            <td>R$40,0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Cemidex Ultra</td>
+                            <td>Lorem ipsum</td>
+                            <td>R$60,0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </center>
+    </main>
+
+
+
+    <footer class="text-light bg-dark pt-3 pb-1 mt-auto">
+        <div class="container">
+            <nav id="topo">
+
+
+                <p class="float-right">
+                    <a href="#">Voltar ao topo</a>
+                </p>
+            </nav>
+            <p>Cemidex&reg; 2022 : : Todos os direitos reservados&copy;</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

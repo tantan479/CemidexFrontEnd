@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Cemidex">
+    <meta name="author" content="Renato Ribeiro Altoé">
+
+
+    <title>Cemidex - Rel. Buscar Req.</title>
+
+    <script src="https://kit.fontawesome.com/4cff10fb00.js" crossorigin="anonymous"></script>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+    <link href="../estilo.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../estilo.css" rel="stylesheet">
+    <style>
+        td {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../../html/img/index/fundo.jpg");'>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Sobre</h4>
+                        <p class="text-muted">
+                            O Cemidex é um sistema web para o gerenciamento de um cemitério.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <ul class="list-unstyled">
+                            <br>
+                            <form class="form-inline my-2 my-lg-0">
+                                <li> <button class="btn btn-outline-warning my-2 my-sm-0 botaoDireita" role="button"><a
+                                            class="text-white botaoDireita">Perfil</a></button></li>
+                                <li><a href="../../html/contato.html" class="text-white">Contato</li>
+                                <li><a href="../../html/sobre.html" class="text-white">Saiba mais sobre</li>
+                            </form>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="../../html/index.html" class="navbar-brand-centered d-flex align-items-center homepage">
+                    <strong><span style="color: #9FBAEB">Cem</span><span style="color:rgb(256, 256, 256);"><i
+                                class="fa-solid fa-dove"></i></span><span style="color: #8CCFAF">dex</span></strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <div class="container ctcontainer">
+            <center>
+                <div class="row">
+
+                    <div class="col-xl-8 offset-xl-2">
+
+                        <br>
+                        <h1 class="meiuca">
+                            Relatório do Requerente
+                        </h1>
+
+                        <form id="contact-form" method="post" action="contact.php" role="form">
+                            <div class="controls">
+                                <button type="button" class="btn btn-primary" data-toggle="modal"
+                                    data-target="#exampleModalCenter" style="margin-right: 50%; display: inline-block;">
+                                    Cadastrar Requerente
+                                </button>
+                                <div class="form-group">
+                                    <div class="col-lg-6">
+
+                                        <div class="modal fade bd-example-modal-lg" id="exampleModalCenter"
+                                            tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                            aria-hidden="true" style="border-radius: 10px;">
+                                            <div class="modal-dialog modal-dialog-centered modal-lg" role="document"
+                                                style="border-radius: 10px;">
+                                                <div class="modal-content" style="border-radius: 10px;">
+                                                    <div class="modal-body">
+
+                                                        <main role="main">
+                                                            <div>
+                                                                <center>
+                                                                    <div class="row">
+
+                                                                        <div class="col-xl-8 offset-xl-2">
+
+                                                                            <h1 style="display: inline-block;">
+                                                                                Cadastro de Requerente
+                                                                            </h1>
+
+                                                                            <form id="contact-form" method="post"
+                                                                                action="contact.php" role="form">
+
+                                                                                <div class="messages"></div>
+
+                                                                                <div class="controls">
+
+                                                                                    <div class="col-lg-6">
+                                                                                        <div class="form-group">
+                                                                                            <label for="form_name">Nome
+                                                                                                Completo * </label>
+                                                                                            <input id="form_name"
+                                                                                                type="text" name="name"
+                                                                                                class="form-control"
+                                                                                                placeholder="Insira seu nome completo"
+                                                                                                required="required"
+                                                                                                data-error="Firstname is required.">
+                                                                                            <div
+                                                                                                class="help-block with-errors">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-6">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="form_email">Email
+                                                                                                    *</label>
+                                                                                                <input id="form_email"
+                                                                                                    type="email"
+                                                                                                    name="e-mail"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Insira seu e-mail *"
+                                                                                                    required="required"
+                                                                                                    data-error="Valid email is required.">
+                                                                                                <div
+                                                                                                    class="help-block with-errors">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="col-lg-6">
+                                                                                            <div class="form-group">
+                                                                                                <label
+                                                                                                    for="form_cpf">CPF
+                                                                                                    *</label>
+                                                                                                <input id="form_cpf"
+                                                                                                    type="tel"
+                                                                                                    name="phone"
+                                                                                                    class="form-control"
+                                                                                                    placeholder="Insira seu CPF">
+                                                                                                <div
+                                                                                                    class="help-block with-errors">
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="form-group">
+                                                                                        <label
+                                                                                            for="form_endereco">Endereço
+                                                                                            *</label>
+                                                                                        <textarea id="form_endereco"
+                                                                                            name="endereco"
+                                                                                            class="form-control"
+                                                                                            placeholder="Insira o endereco"
+                                                                                            rows="4" required="required"
+                                                                                            data-error="Please, leave us a message."></textarea>
+                                                                                        <div
+                                                                                            class="help-block with-errors">
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <div class="form-group">
+                                                                                        <div class="g-recaptcha"
+                                                                                            data-sitekey="6LeVNMcUAAAAALAA7uBf4hqHolXao-OZRXlOLwHX"
+                                                                                            data-callback="verifyRecaptchaCallback"
+                                                                                            data-expired-callback="expiredRecaptchaCallback">
+                                                                                        </div>
+                                                                                        <input
+                                                                                            class="form-control d-none"
+                                                                                            data-recaptcha="true"
+                                                                                            required
+                                                                                            data-error="Please complete the Captcha">
+                                                                                        <div
+                                                                                            class="help-block with-errors">
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <a id="adquirir" href="#"
+                                                                                        role="button"
+                                                                                        class="btn btn-primary frase">Salvar</a>
+                                                                                    <br><br>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </center>
+                                                            </div>
+                                                        </main>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="inputNome">Nome do Requerente:</label>
+                                            <input type="text" class="form-control" id="inputNome"
+                                                placeholder="Buscar pelo Requerente">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card-deck memorias">
+
+                                    <div class="card">
+                                        <div class="card-body morto">
+                                            <h2 class="card-title">Maria Alice</h2><br>
+                                            <button class="btn btn-primary pemorto" type="button" data-toggle="collapse"
+                                                data-target="#collapseMaria" aria-expanded="false"
+                                                aria-controls="collapseExample">
+                                                Registros
+                                            </button><br>
+                                            <div class="collapse" id="collapseMaria">
+                                                <div class="card card-body" style="color: black;">
+                                                    <p>Nome: Maria Alice</p>
+                                                    <p>CPF: 123.456.789-10</p>
+                                                    <p>Telefone: (28) 99923-4857</p>
+                                                    <p>Id do Requerente: 1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-body morto">
+                                            <h2 class="card-title">Marcos André</h2><br>
+                                            <button class="btn btn-primary pemorto" type="button" data-toggle="collapse"
+                                                data-target="#collapseMarcos" aria-expanded="false"
+                                                aria-controls="collapseExample">
+                                                Registros
+                                            </button><br>
+                                            <div class="collapse" id="collapseMarcos">
+                                                <div class="card card-body" style="color: black;">
+                                                    <p>Nome: Marcos André</p>
+                                                    <p>CPF: 123.456.789-10</p>
+                                                    <p>Telefone: (28) 99923-4857</p>
+                                                    <p>Id do Requerente: 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div><br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </main>
+
+    <footer class="text-light bg-dark pt-3 pb-1 mt-auto">
+        <div class="container">
+            <nav id="topo">
+
+
+                <p class="float-right">
+                    <a href="#">Voltar ao topo</a>
+                </p>
+            </nav>
+            <p>Cemidex&reg; 2022 : : Todos os direitos reservados&copy;</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

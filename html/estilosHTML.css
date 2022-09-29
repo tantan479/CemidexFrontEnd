@@ -1,0 +1,10 @@
+.botoes{
+
+    color: #70C6FF!important;
+    transition: 0.5s;
+}
+
+.botoes:hover{
+    background-color: #70C6FF!important;
+    color: white!important;
+}
