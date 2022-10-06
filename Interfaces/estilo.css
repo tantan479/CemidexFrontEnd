@@ -371,13 +371,12 @@ a:hover {
     border-radius: 25px !important;
     box-shadow: 0 0px 20px rgba(0, 0, 0, .2);
     width: 100% !important;
-    display: block !important;
+    display: block!important;
     justify-content: center !important;
     background-color: white !important;
     margin-top: 66px !important;
     margin-bottom: 25px !important;
     border: 0px !important;
-    /* background-color: #473b34!important; */
     background-color: #322A26 !important;
 }
 
@@ -389,6 +388,14 @@ a:hover {
     display: block !important;
     justify-content: center !important;
     padding: 10px!important;
+}
+
+.ctcontainer4 {
+    width: 100% !important;
+    display: flex!important;
+    justify-content: center !important;
+    border-radius: 25px !important;
+    background-color: #322A26 !important;
 }
 
 .meiuca {
@@ -403,4 +410,12 @@ a:hover {
 .memorias {
     margin-top: 20px !important;
     margin-bottom: 50px !important;
+}
+
+.teste:nth-child(even){
+    background-color: red;
+}
+
+.teste:nth-child(odd){
+    background-color: green;
 }

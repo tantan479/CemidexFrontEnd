@@ -15,7 +15,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <link rel="stylesheet" href="../Interfaces/estilo.css">
-    <link href="estilo.css" rel="stylesheet">
+    <link href="estilosHTML.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
 
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between cabeca">
+            <div class="container d-flex justify-content-between">
                 <a href="../../html/index.html" class="navbar-brand-centered d-flex align-items-center homepage">
                     <strong><span style="color: #9FBAEB">Cem</span><span style="color:rgb(256, 256, 256);"><i
                                 class="fa-solid fa-dove"></i></span><span style="color: #8CCFAF">dex</span></strong>
@@ -64,40 +64,34 @@
     </header>
 
     <main role="main">
-        <center>
-            <div class="container ctcontainer2">
-                <div>
-
-                    <h1>Localização dos jazigos</h1>
-                    <div class="ctcontainer3" style="color: white;">
-
-                        <script>
-                            let ocupada;
-                            let k = 1;
-                            for (j = 0; j < 10; j++) {
-                                document.write("<div style='border: 2px; margin: 5px; display:flex;'>");
-                                for (i = 0; i < 10; i++) {
-                                    //ocupada = Verifica_de_algum_Lugar(k);
-                                    document.write("<div class='teste' style='border: 2px solid black; margin: 5px; width: 20%;' onclick='clicou(" + k + ")'>" + k + "</div>");
-                                    //document.write("<div class='"+(ocupada?'verde':'cinza')+"' onclick='clicou("+k+")'>"+k+"</div>");
-                                    k++;
-                                }
-                                document.write("</div>");
-                            }
-
-                            function clicou(id_cova) {
-                                alert("clicou na cova: " + id_cova);
-                            }
-                        </script>
-
-                    </div><br>
-
-                </div>
+        <div class="container ctcontainer2">
+            <div class="ctcontainer4">
+                <h1>Detalhes do Jazigo</h1>
             </div>
-        </center>
+            <div class="ctcontainer3">
+                <p style="color: white; font-size: 25px;">
+                    Número do Jazigo: 1
+                </p>
+                <p style="color: white; font-size: 25px;">
+                    Ocupação: Livre
+                </p>
+                <p style="color: white; font-size: 25px;">
+                    Localização do Jazigo: Área papal
+                </p>
+                <p style="color: white; font-size: 25px;">
+                    (campo oculto) Ocupado por: 
+                </p>
+                <p style="color: white; font-size: 25px;">
+                    (campo oculto) Requerente:
+                </p>
+            </div>
+            <br>
+        </div>
     </main>
 
-    <footer class="text-light bg-dark pt-3 pb-1 mt-auto">
+
+
+    <footer class="text-light bg-dark pt-3 pb-1 footer">
         <div class="container">
             <nav id="topo">
 
@@ -120,7 +114,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

@@ -8,22 +8,21 @@
     <meta name="description" content="Cemidex">
     <meta name="author" content="Renato Ribeiro Altoé">
 
-
     <title>Cemidex</title>
 
     <script src="https://kit.fontawesome.com/4cff10fb00.js" crossorigin="anonymous"></script>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
     <link rel="icon" type="image/x-icon" href="img/icon.ico">
     <link rel="stylesheet" href="../Interfaces/estilo.css">
-    <link href="estilosHTML.css" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 
-<body class="d-flex flex-column min-vh-100"> 
+<body class="d-flex flex-column min-vh-100" style='background-image: url("../html/img/index/fundo.jpg");'>
 
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
@@ -39,10 +38,10 @@
                         <ul class="list-unstyled">
                             <br>
                             <form class="form-inline my-2 my-lg-0">
-                                <li> <a href="../Interfaces/Login.html" class="btn text-white botaoDireita botoes"
-                                    role="button">Login</a></li>
-                                <li><a href="../../html/contato.html" class="text-white nomemorto">Contato</li>
-                                <li><a href="../../html/sobre.html" class="text-white nomemorto">Saiba mais sobre</li>
+                                <li> <a href="#" class="btn text-white botaoDireita botoes" role="button">Perfil</a>
+                                </li>
+                                <li><a href="contato.html" class="text-white nomemorto">Contato</li>
+                                <li><a href="html/sobre.html" class="text-white nomemorto">Saiba mais sobre</li>
                             </form>
                         </ul>
                     </div>
@@ -51,11 +50,12 @@
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
-                <a href="../../html/index.html" class="navbar-brand-centered d-flex align-items-center homepage">
+                <a href="../html/index.html" class="navbar-brand-centered d-flex align-items-center homepage">
                     <strong><span style="color: #9FBAEB">Cem</span><span style="color:rgb(256, 256, 256);"><i
                                 class="fa-solid fa-dove"></i></span><span style="color: #8CCFAF">dex</span></strong>
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                    aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -63,46 +63,53 @@
     </header>
 
     <main role="main">
-        <center>
-            <h1 style="color: black;">Sophia Esther Daniela</h1>
-            <div class="container row featurette">
-                <div class="col-md-7">
-                    <h1 style="font-size: 35px;">Quem era?</h1>
-                    <p class="lead">Sophia Esther Daniela foi uma mulher amorosa e corajosa. Ela lutou
-                        bravamente contra um câncer, mas, infelizmente, não conseguiu vencer. Sophia deixou
-                        este mundo em paz, rodeada pelo amor de sua família e amigos. Ela será lembrada como
-                        uma mulher forte e compassiva que sempre teve um sorriso no rosto. Sophia amava a
-                        vida e viveu cada momento ao máximo. Ela deixa um legado de amor e bondade que
-                        continuará a inspirar aqueles que a amavam.</p>
-                    <br><Br>
-                    <p style="font-size: 25px;"><i class="fa-solid fa-star"></i> 27/05/1997 - 14/07/2020 <i class="fa-solid fa-cross"></i></p>
+        <div class="container ctcontainer2">
+            <div class="row">
+                <div class="col-sm-2.5">
+                    <img src="../Interfaces/img/Sophia.jpg"
+                        style="border-top-left-radius: 25px; border-bottom-left-radius: 25px;" width="475vw" height="580vh">
                 </div>
-                <div class="col-md-5">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="../Interfaces/img/Sophia.jpg" width="500" height="500">
+                <div class="col-sm-7">
+                    <h1>Sophia Esther Daniela</h1>
+                    <div class="container ctcontainer" style="display: inline;">
+                        <div class="col-md-5" style="display: inline;">
+                            <h1 style="font-size: 35px;">Quem era?</h1>
+                            <p class="lead">Sophia Esther Daniela foi uma mulher amorosa e corajosa. Ela lutou
+                                bravamente contra um câncer, mas, infelizmente, não conseguiu vencer. Sophia deixou
+                                este mundo em paz, rodeada pelo amor de sua família e amigos. Ela será lembrada como
+                                uma mulher forte e compassiva que sempre teve um sorriso no rosto. Sophia amava a
+                                vida e viveu cada momento ao máximo. Ela deixa um legado de amor e bondade que
+                                continuará a inspirar aqueles que a amavam.</p>
+                            <br><Br>
+                            <p style="font-size: 25px;"><i class="fa-solid fa-star"></i> 27/05/1997 - 14/07/2020 <i
+                                    class="fa-solid fa-cross"></i></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </center>
+        </div>
     </main>
-
-   
 
     <footer class="text-light bg-dark pt-3 pb-1 footer">
         <div class="container">
             <nav id="topo">
-
-
-            <p class="float-right">
-                <a href="#">Voltar ao topo</a>
-            </p>
+                <p class="float-right">
+                    <a href="#">Voltar ao topo</a>
+                </p>
             </nav>
             <p>Cemidex&reg; 2022 : : Todos os direitos reservados&copy;</p>
         </div>
     </footer>
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
